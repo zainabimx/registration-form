@@ -1,0 +1,123 @@
+/* Set a gradient background for the entire page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f06, #4a90e2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Create a subtle animation for the background */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* Container for the form */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    color: #4a90e2;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Subtitle styling */
+.subtitle {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Form groups styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    outline: none;
+    background-color: #e9f4ff;
+}
+
+/* Button styling */
+.btn {
+    background: linear-gradient(to right, #f06, #4a90e2);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #4a90e2, #f06);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Response message styling */
+#response {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4a90e2;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}          
